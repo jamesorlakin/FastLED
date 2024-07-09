@@ -24,7 +24,7 @@
 #elif defined(__IMXRT1062__)
 // teensy4
 #include "platforms/arm/mxrt1062/led_sysdefs_arm_mxrt1062.h"
-#elif defined(__SAM3X8E__)
+#elif defined(__SAM3X8E__) || 1
 // Include sam/due headers
 #include "platforms/arm/sam/led_sysdefs_arm_sam.h"
 #elif defined(STM32F10X_MD) || defined(__STM32F1__) || defined(STM32F2XX) || defined(STM32F1)
