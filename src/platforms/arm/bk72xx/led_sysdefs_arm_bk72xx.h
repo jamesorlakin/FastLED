@@ -1,15 +1,12 @@
-#ifndef __INC_LED_SYSDEFS_ARM_KL26_H
-#define __INC_LED_SYSDEFS_ARM_KL26_H
+#ifndef __INC_LED_SYSDEFS_ARM_BK72XX
+#define __INC_LED_SYSDEFS_ARM_BK72XX
 
-#define FASTLED_TEENSYLC
 #define FASTLED_ARM
 #define FASTLED_ARM_M0_PLUS
 
 #ifndef INTERRUPT_THRESHOLD
 #define INTERRUPT_THRESHOLD 1
 #endif
-
-#define FASTLED_SPI_BYTE_ONLY
 
 // Default to allowing interrupts
 #ifndef FASTLED_ALLOW_INTERRUPTS
@@ -20,9 +17,9 @@
 #define FASTLED_ACCURATE_CLOCK
 #endif
 
-#if (F_CPU == 96000000)
-#define CLK_DBL 1
-#endif
+// #if (F_CPU == 96000000)
+// #define CLK_DBL 1
+// #endif
 
 // Get some system include files
 #include <avr/io.h>
